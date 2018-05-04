@@ -10,7 +10,12 @@
 	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
 	<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
+	
+	<!-- Application Configurations -->
 	<script type="text/javascript" src="custom/app.js"></script>
+	<script type="text/javascript" src="custom/Constants.js"></script>
+	<script type="text/javascript" src="custom/Factories.js"></script>
 </head>
 <body ng-app="app">
 	<nav class="navbar navbar-default">
@@ -28,10 +33,12 @@
 		
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li class="active"><a ui-sref="root()">Home</a></li>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a ui-sref="root()">Home</a></li>
 				<li><a ui-sref="about()">About</a></li>
 				<li><a ui-sref="firstMessage()">First</a></li>
+				<li><a ui-sref="hitung()">Hitung</a></li>
+				<li><a ui-sref="login()">Login</a></li>
 			</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
